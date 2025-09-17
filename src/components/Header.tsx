@@ -36,14 +36,11 @@ const Header = () => {
                 <a href="/bikinizone">Bikinizone</a>
                 <a href="/achseln">Achseln</a>
                 <a href="/arme">Arme</a>
-                <a href="/bauch">Bauch</a>
                 <a href="/beine">Beine</a>
-                <a href="/frauen/gesicht">Gesicht</a>
-                <a href="/frauen/bauch">Bauch</a>
-                <a href="/frauen/brust">Brust</a>
+                <a href="/bauch">Bauch</a>
                 <a href="/brust">Brust</a>
                 <a href="/gesicht">Gesicht</a>
-                <a href="/frauen/po-falte">Po-Falte</a>
+                <a href="/frauen/pofalte.html">Po-Falte</a>
               </div>
             </div>
 
@@ -97,6 +94,7 @@ const Header = () => {
                   <a href="/beine" className="block py-1 text-sm text-gray-600">Beine</a>
                   <a href="/brust" className="block py-1 text-sm text-gray-600">Brust</a>
                   <a href="/gesicht" className="block py-1 text-sm text-gray-600">Gesicht</a>
+                  <a href="/frauen/pofalte.html" className="block py-1 text-sm text-gray-600">Po-Falte</a>
                 </div>
               </div>
               <div className="py-2">
