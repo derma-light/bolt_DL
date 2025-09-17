@@ -31,7 +31,7 @@ const Header = () => {
                 </svg>
               </button>
               <div className="dropdown-menu-hybrid">
-                <a href="/frauen">Übersicht Frauen</a>
+                <a href="/frauen/">Übersicht Frauen</a>
                 <a href="/frauen/intimbereich">Intimbereich</a>
                 <a href="/bikinizone">Bikinizone</a>
                 <a href="/achseln">Achseln</a>
@@ -85,7 +85,7 @@ const Header = () => {
               <div className="py-2">
                 <span className="text-gray-900 font-medium">Frauen</span>
                 <div className="mt-2 ml-4 space-y-1">
-                  <a href="/frauen" className="block py-1 text-sm text-gray-600">Übersicht Frauen</a>
+                  <a href="/frauen/" className="block py-1 text-sm text-gray-600">Übersicht Frauen</a>
                   <a href="/frauen/intimbereich" className="block py-1 text-sm text-gray-600">Intimbereich</a>
                   <a href="/bikinizone" className="block py-1 text-sm text-gray-600">Bikinizone</a>
                   <a href="/achseln" className="block py-1 text-sm text-gray-600">Achseln</a>
