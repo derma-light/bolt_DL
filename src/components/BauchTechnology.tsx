@@ -1,5 +1,6 @@
 import React from 'react';
 import { Zap, Target, ThermometerSun } from 'lucide-react';
+import BauchLaserTile from './BauchLaserTile';
 
 const BauchTechnology = () => {
   return (
@@ -55,13 +56,8 @@ const BauchTechnology = () => {
               </div>
             </div>
 
-            <div className="relative">
-              <img
-                src="https://images.pexels.com/photos/5938533/pexels-photo-5938533.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Moderne Laser-Technologie für Bauch-Haarentfernung"
-                className="w-full h-auto rounded-xl shadow-lg"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-xl"></div>
+            <div className="flex justify-center lg:justify-end">
+              <BauchLaserTile />
             </div>
           </div>
 
@@ -89,6 +85,24 @@ const BauchTechnology = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Contextual Links */}
+      <div className="text-center mt-16">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <a 
+            href="/beratung" 
+            className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
+          >
+            Kostenlose Erstberatung vereinbaren
+          </a>
+          <a 
+            href="/preise-haarentfernung" 
+            className="inline-flex items-center px-6 py-3 bg-white text-blue-600 font-medium rounded-lg border border-blue-600 hover:bg-blue-50 transition-colors"
+          >
+            Alle Preise ansehen
+          </a>
         </div>
       </div>
     </section>

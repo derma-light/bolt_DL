@@ -93,7 +93,7 @@ const BikinizoneProcess = () => {
         {/* CTA */}
         <div className="text-center mt-16">
           <a 
-            href="#beratung" 
+            href="/beratung" 
             className="inline-flex items-center px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
           >
             Kostenlose Erstberatung vereinbaren

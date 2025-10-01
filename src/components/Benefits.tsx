@@ -1,5 +1,6 @@
 import React from 'react';
-import { Calendar, Zap, Shield, DollarSign, UserCheck, Award } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Calendar, Zap, Shield, Euro, UserCheck, Award } from 'lucide-react';
 
 const Benefits = () => {
   const benefits = [
@@ -19,7 +20,7 @@ const Benefits = () => {
       description: "Individuelle Parameter + Kontaktkühlung"
     },
     {
-      icon: DollarSign,
+      icon: Euro,
       title: "Transparente Preise",
       description: "Einzelpreise statt Paketdruck"
     },
@@ -43,7 +44,7 @@ const Benefits = () => {
             Ihre Vorteile bei Derma Light
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Kompetenz, Präzision & Transparenz – für nachhaltige Ergebnisse.
+            Professionelle Laser-Haarentfernung Hamburg: Kompetenz, Präzision & Transparenz für nachhaltige Ergebnisse.
           </p>
         </div>
 
@@ -64,6 +65,65 @@ const Benefits = () => {
               </p>
             </div>
           ))}
+        </div>
+
+        {/* Internal Links Section */}
+        <div className="mt-16 text-center">
+          <h3 className="text-2xl font-semibold text-gray-900 mb-8">
+            Laser-Haarentfernung Behandlungsbereiche in Hamburg
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+            <Link 
+              to="/frauen" 
+              className="group p-6 bg-pink-50 rounded-xl border border-pink-200 hover:border-pink-300 hover:shadow-lg transition-all duration-300"
+              title="Laser-Haarentfernung für Frauen - Alle Behandlungsbereiche"
+              title="Laser-Haarentfernung für Frauen - Alle Behandlungsbereiche"
+            >
+              <h4 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-pink-600">
+                Behandlungen für Frauen
+              </h4>
+              <p className="text-gray-600 text-sm mb-3">
+                Gesicht, Achseln, Bikinizone, Beine und mehr
+              </p>
+              <span className="text-pink-600 text-sm font-medium group-hover:underline">
+                Alle Bereiche entdecken →
+              </span>
+            </Link>
+            <Link 
+              to="/maenner" 
+              className="group p-6 bg-blue-50 rounded-xl border border-blue-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300"
+              title="Laser-Haarentfernung für Männer - Alle Behandlungsbereiche"
+              title="Laser-Haarentfernung für Männer - Alle Behandlungsbereiche"
+            >
+              <h4 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-blue-600">
+                Behandlungen für Männer
+              </h4>
+              <p className="text-gray-600 text-sm mb-3">
+                Rücken, Brust, Intimbereich und mehr
+              </p>
+              <span className="text-blue-600 text-sm font-medium group-hover:underline">
+                Alle Bereiche entdecken →
+              </span>
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* Contextual Links */}
+      <div className="text-center mt-16">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <a 
+            href="/beratung" 
+            className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
+          >
+            Kostenlose Erstberatung vereinbaren
+          </a>
+          <a 
+            href="/preise-haarentfernung" 
+            className="inline-flex items-center px-6 py-3 bg-white text-blue-600 font-medium rounded-lg border border-blue-600 hover:bg-blue-50 transition-colors"
+          >
+            Alle Preise ansehen
+          </a>
         </div>
       </div>
     </section>

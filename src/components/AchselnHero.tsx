@@ -19,7 +19,7 @@ const AchselnHero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/laser-haarentfernung-hamburg-hero-image.png"
+          src="/alexandrit-laser-light-blue.png"
           alt=""
           className="w-full h-full object-cover opacity-20"
         />
@@ -37,8 +37,13 @@ const AchselnHero = () => {
             Laser Haarentfernung Achseln in Hamburg
           </h1>
           
+          <h2 className="text-2xl md:text-3xl text-gray-800 font-semibold mb-6">
+            Weniger Rasur, weniger Reizungen – moderne 755 & 808 nm Technologie für hygienisch glattere Achseln
+          </h2>
+          
           <p className="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
-            Weniger Rasur, weniger Reizungen – moderne 755 & 808 nm Technologie für hygienisch glattere Achseln.
+            Spezialisierte Achsel-Haarentfernung in Hamburg mit Dual-Wellenlängen-Technologie. 
+            Schnelle Termine, weniger Einwachsungen und dauerhaft glattere Achseln ohne tägliche Rasur.*
           </p>
 
           {/* USP Pills */}
@@ -54,14 +59,14 @@ const AchselnHero = () => {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
             <a 
-              href="#beratung" 
+              href="/beratung" 
               className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
             >
               Kostenlose Beratung
               <ArrowRight className="ml-2 w-5 h-5" />
             </a>
             <a 
-              href="#preise" 
+              href="/preise-haarentfernung" 
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg border-2 border-blue-600 hover:bg-blue-50 transition-all duration-200"
             >
               Preise
@@ -71,9 +76,9 @@ const AchselnHero = () => {
           {/* Trust Elements */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {trustElements.map((element, index) => (
-              <div key={index} className="flex items-center text-center p-4 bg-white/80 backdrop-blur-sm rounded-lg border border-gray-200">
-                <element.icon className="w-5 h-5 text-blue-600 mr-2" />
-                <span className="text-sm font-medium text-gray-700">{element.text}</span>
+              <div key={index} className="flex items-center text-center p-4 bg-blue-50/80 backdrop-blur-sm rounded-xl border border-blue-200 hover:bg-blue-100/80 hover:shadow-lg transition-all duration-300">
+                <element.icon className="w-5 h-5 text-blue-700 mr-2" />
+                <span className="text-sm font-medium text-blue-800">{element.text}</span>
               </div>
             ))}
           </div>

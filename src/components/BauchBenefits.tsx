@@ -66,6 +66,24 @@ const BauchBenefits = () => {
           ))}
         </div>
       </div>
+
+      {/* Contextual Links */}
+      <div className="text-center mt-16">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <a 
+            href="/beratung" 
+            className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
+          >
+            Kostenlose Erstberatung vereinbaren
+          </a>
+          <a 
+            href="/preise-haarentfernung" 
+            className="inline-flex items-center px-6 py-3 bg-white text-blue-600 font-medium rounded-lg border border-blue-600 hover:bg-blue-50 transition-colors"
+          >
+            Alle Preise ansehen
+          </a>
+        </div>
+      </div>
     </section>
   );
 };
