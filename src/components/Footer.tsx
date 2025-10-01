@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, MapPin } from 'lucide-react';
+import { Phone, MapPin, FileText, Shield } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -38,11 +38,19 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-6">Rechtliches</h3>
             <div className="space-y-3">
-              <a href="/impressum" className="block text-gray-300 hover:text-blue-400 transition-colors">
+              <a href="/impressum" className="block text-gray-300 hover:text-blue-400 transition-colors flex items-center">
+                <FileText className="w-4 h-4 mr-2" />
                 Impressum
               </a>
-              <a href="/datenschutz" className="block text-gray-300 hover:text-blue-400 transition-colors">
+              <a href="/datenschutz" className="block text-gray-300 hover:text-blue-400 transition-colors flex items-center">
+                <Shield className="w-4 h-4 mr-2" />
                 Datenschutz
+              </a>
+              <a href="/frauen" className="block text-gray-300 hover:text-blue-400 transition-colors">
+                Behandlungen für Frauen
+              </a>
+              <a href="/maenner" className="block text-gray-300 hover:text-blue-400 transition-colors">
+                Behandlungen für Männer
               </a>
             </div>
           </div>
@@ -51,14 +59,20 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-6">Quick-Links</h3>
             <div className="space-y-3">
-              <a href="/termin" className="block text-gray-300 hover:text-blue-400 transition-colors">
-                Termin-Seite
+              <a href="/achseln" className="block text-gray-300 hover:text-blue-400 transition-colors">
+                Achseln
               </a>
-              <a href="#preise" className="block text-gray-300 hover:text-blue-400 transition-colors">
+              <a href="/bikinizone" className="block text-gray-300 hover:text-blue-400 transition-colors">
+                Bikinizone
+              </a>
+              <a href="/beine" className="block text-gray-300 hover:text-blue-400 transition-colors">
+                Beine
+              </a>
+              <a href="/preise-haarentfernung" className="block text-gray-300 hover:text-blue-400 transition-colors">
                 Preisliste
               </a>
-              <a href="/hauttyp" className="block text-gray-300 hover:text-blue-400 transition-colors">
-                Hauttyp bestimmen
+              <a href="/gesicht" className="block text-gray-300 hover:text-blue-400 transition-colors">
+                Gesicht
               </a>
             </div>
           </div>
@@ -70,7 +84,7 @@ const Footer = () => {
               Fragen klären & unverbindlich beraten lassen.
             </p>
             <a 
-              href="/#beratung" 
+              href="/beratung" 
               className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
             >
               Beratung anfragen

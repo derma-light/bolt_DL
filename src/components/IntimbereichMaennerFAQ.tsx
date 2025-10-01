@@ -29,7 +29,7 @@ const AccordionItem = ({ title, children, isOpen, onToggle }: {
   );
 };
 
-const GesichtFAQ = () => {
+const IntimbereichMaennerFAQ = () => {
   const [openAccordion, setOpenAccordion] = useState<string | null>(null);
 
   const toggleAccordion = (id: string) => {
@@ -38,19 +38,39 @@ const GesichtFAQ = () => {
 
   const faqItems = [
     {
-      id: 'shaving',
-      title: 'Kann ich zwischen den Sitzungen rasieren?',
-      content: 'Ja, Rasur ist erlaubt. Nicht zupfen oder wachsen, da die Haarwurzel für die Laserwirkung benötigt wird.'
+      id: 'sessions',
+      title: 'Wie viele Sitzungen brauche ich als Mann im Intimbereich?',
+      content: 'Männliche Intimbereich-Haare sind oft dichter und stärker als bei Frauen. Daher sind meist 8-12 Sitzungen nötig. Die genaue Anzahl hängt von Ihrer individuellen Haarstruktur und dem gewünschten Ergebnis ab.'
     },
     {
-      id: 'acne',
-      title: 'Was, wenn ich unreine Haut habe?',
-      content: 'Aktiv entzündete Läsionen werden ausgespart. Bei stark aktiver Akne sollte zunächst eine dermatologische Behandlung erfolgen, bevor mit der Laser-Haarentfernung begonnen wird.'
+      id: 'pain',
+      title: 'Ist die Behandlung im Intimbereich schmerzhaft?',
+      content: 'Der Intimbereich ist sensibler als andere Körperregionen. Durch unsere moderne Kontaktkühlung und individuell angepasste Parameter ist die Behandlung jedoch gut erträglich. Die meisten Männer empfinden nur ein leichtes Wärmegefühl.'
+    },
+    {
+      id: 'discretion',
+      title: 'Wie wird Diskretion gewährleistet?',
+      content: 'Diskretion hat bei uns höchste Priorität. Die Behandlung erfolgt in einem geschützten Einzelraum durch geschultes Fachpersonal. Alle Mitarbeiter unterliegen der Schweigepflicht. Termine können diskret vereinbart werden.'
+    },
+    {
+      id: 'preparation',
+      title: 'Wie bereite ich mich auf die Behandlung vor?',
+      content: '24-48 Stunden vor der Behandlung sollten Sie den Intimbereich gründlich rasieren. Vermeiden Sie 2 Wochen vorher intensive Sonneneinstrahlung. Am Behandlungstag keine Cremes oder Lotionen verwenden.'
+    },
+    {
+      id: 'zones',
+      title: 'Welche Bereiche können behandelt werden?',
+      content: 'Wir können alle gewünschten Bereiche des männlichen Intimbereichs behandeln - von einer dezenten Reduktion bis zur kompletten Entfernung. Der genaue Umfang wird diskret in der Beratung besprochen.'
+    },
+    {
+      id: 'aftercare',
+      title: 'Was muss ich nach der Behandlung beachten?',
+      content: 'Vermeiden Sie 24-48 Stunden nach der Behandlung Sauna, intensive körperliche Aktivität und enge Kleidung. Tragen Sie lockere, atmungsaktive Unterwäsche und verwenden Sie bei Bedarf eine beruhigende Pflege.'
     }
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 lg:px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
@@ -58,7 +78,7 @@ const GesichtFAQ = () => {
               Häufig gestellte Fragen
             </h2>
             <p className="text-xl text-gray-600">
-              Alles was Sie über die Laser-Haarentfernung im Gesicht wissen müssen.
+              Alles was Sie über die Laser-Haarentfernung im Intimbereich für Männer wissen müssen.
             </p>
           </div>
 
@@ -81,7 +101,7 @@ const GesichtFAQ = () => {
               href="/beratung" 
               className="inline-flex items-center px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
             >
-              Kostenlose Beratung vereinbaren
+              Persönliche Beratung vereinbaren
             </a>
           </div>
         </div>
@@ -90,4 +110,4 @@ const GesichtFAQ = () => {
   );
 };
 
-export default GesichtFAQ;
+export default IntimbereichMaennerFAQ;

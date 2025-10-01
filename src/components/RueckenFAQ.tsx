@@ -29,7 +29,7 @@ const AccordionItem = ({ title, children, isOpen, onToggle }: {
   );
 };
 
-const GesichtFAQ = () => {
+const RueckenFAQ = () => {
   const [openAccordion, setOpenAccordion] = useState<string | null>(null);
 
   const toggleAccordion = (id: string) => {
@@ -38,27 +38,32 @@ const GesichtFAQ = () => {
 
   const faqItems = [
     {
-      id: 'shaving',
-      title: 'Kann ich zwischen den Sitzungen rasieren?',
-      content: 'Ja, Rasur ist erlaubt. Nicht zupfen oder wachsen, da die Haarwurzel für die Laserwirkung benötigt wird.'
+      id: 'pain',
+      title: 'Tut die Behandlung weh?',
+      content: 'Die Empfindlichkeit variiert von Person zu Person, aber viele Männer beschreiben die Behandlung als nur leicht unangenehm, ähnlich einem leichten Stechen oder einem warmen Gefühl. Die moderne Lasertechnologie, die bei Derma Light verwendet wird, ist darauf ausgelegt, die Behandlungsfläche zu kühlen und so das Unbehagen zu minimieren.'
     },
     {
-      id: 'acne',
-      title: 'Was, wenn ich unreine Haut habe?',
-      content: 'Aktiv entzündete Läsionen werden ausgespart. Bei stark aktiver Akne sollte zunächst eine dermatologische Behandlung erfolgen, bevor mit der Laser-Haarentfernung begonnen wird.'
+      id: 'sessions',
+      title: 'Wie viele Sitzungen sind erforderlich?',
+      content: 'Um ein optimales Ergebnis zu erzielen, sind durchschnittlich 6 bis 8 Sitzungen notwendig. Dies hängt jedoch von Faktoren wie dem Haartyp, der Dichte und der individuellen Reaktion der Haut auf die Behandlung ab. Zwischen den einzelnen Sitzungen liegt in der Regel ein Zeitraum von 4 bis 6 Wochen.'
+    },
+    {
+      id: 'aftercare',
+      title: 'Was ist nach der Behandlung zu beachten?',
+      content: 'Nach der Behandlung sollte die behandelte Haut gut gepflegt werden. Es wird empfohlen, direkte Sonneneinstrahlung für mindestens zwei Wochen zu vermeiden und einen hohen Sonnenschutz (SPF 50+) zu verwenden, um Hautirritationen zu verhindern. Die Haut kann nach der Behandlung etwas gerötet sein, was normalerweise innerhalb weniger Stunden bis Tage abklingt.'
     }
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 lg:px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Häufig gestellte Fragen
+              Häufige Fragen zur Rückenbehandlung
             </h2>
             <p className="text-xl text-gray-600">
-              Alles was Sie über die Laser-Haarentfernung im Gesicht wissen müssen.
+              Alles was Sie über die Laser-Haarentfernung am Rücken wissen müssen.
             </p>
           </div>
 
@@ -81,7 +86,7 @@ const GesichtFAQ = () => {
               href="/beratung" 
               className="inline-flex items-center px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
             >
-              Kostenlose Beratung vereinbaren
+              Persönliche Beratung vereinbaren
             </a>
           </div>
         </div>
@@ -90,4 +95,4 @@ const GesichtFAQ = () => {
   );
 };
 
-export default GesichtFAQ;
+export default RueckenFAQ;

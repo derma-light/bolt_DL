@@ -1,49 +1,56 @@
 import React from 'react';
-import { UserCheck, Sparkles, Settings, Zap, Snowflake } from 'lucide-react';
+import { UserCheck, Settings, Zap, Shield, Calendar } from 'lucide-react';
 
-const GesichtProcess = () => {
+const FrauenProcess = () => {
   const processSteps = [
     {
       icon: UserCheck,
-      title: "Beratung & Hautanalyse",
-      description: "Einschätzung von Haardichte, Pigment & Hautempfindlichkeit"
-    },
-    {
-      icon: Sparkles,
-      title: "Vorbereitung",
-      description: "Haut sauber, Make-up entfernt; Abdecken von Muttermalen bei Bedarf"
+      title: "Beratung & Analyse",
+      description: "Hauttyp, Haarstruktur, Kontraindikationen"
     },
     {
       icon: Settings,
-      title: "Einstellung",
-      description: "Energie & Puls angepasst an Areal (Oberlippe, Kinn, Wangen)"
+      title: "Vorbereitung",
+      description: "Areal rasiert, sauber, produktfrei"
     },
     {
       icon: Zap,
-      title: "Laserimpulse",
-      description: "Punktgenaue Applikation mit gleichmäßiger Abdeckung"
+      title: "Einstellung",
+      description: "Energie, Puls, Spotgröße individuell"
     },
     {
-      icon: Snowflake,
-      title: "Kühlung & Hinweise",
-      description: "Beruhigende Pflege, UV-Schutz bei Exposition"
+      icon: Shield,
+      title: "Laserimpulse",
+      description: "Gleichmäßige Abdeckung mit Kontaktkühlung"
+    },
+    {
+      icon: Calendar,
+      title: "Nachsorge",
+      description: "Kühlung, Pflege, UV-Schutz"
     }
   ];
 
+  const sessionInfo = [
+    "6-8 Sitzungen (Durchschnitt)",
+    "4-8 Wochen Abstand",
+    "1-2 Wochen Shedding",
+    "Individuelle Anpassung an Ihren Haarwachstumszyklus"
+  ];
+
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-4 lg:px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Ablauf deiner Behandlung
+            Ablauf, Sitzungen & Intervalle
           </h2>
           <p className="text-xl text-gray-600">
-            Professionelle Laser-Haarentfernung im Gesicht in 5 strukturierten Schritten.
+            Detaillierter Behandlungsablauf mit allen wichtigen Informationen zu Sitzungen und Intervallen.
           </p>
         </div>
 
         {/* Process Steps */}
-        <div className="max-w-5xl mx-auto mb-16">
+        <div className="max-w-5xl mx-auto mb-20">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
             {processSteps.map((step, index) => (
               <div key={index} className="text-center">
@@ -58,12 +65,20 @@ const GesichtProcess = () => {
           </div>
         </div>
 
-        {/* Medical Note */}
+        {/* Session Information */}
         <div className="max-w-4xl mx-auto">
-          <div className="bg-green-50 rounded-xl p-6 text-center">
-            <p className="text-gray-700 italic">
-              *Leichte Rötung ist normal und klingt meist rasch ab.
-            </p>
+          <div className="bg-blue-50 rounded-xl p-8">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-center">
+              Behandlungsablauf & Sitzungen
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {sessionInfo.map((info, index) => (
+                <div key={index} className="flex items-start p-4 bg-white rounded-lg">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                  <span className="text-gray-700 font-medium">{info}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
@@ -81,4 +96,4 @@ const GesichtProcess = () => {
   );
 };
 
-export default GesichtProcess;
+export default FrauenProcess;

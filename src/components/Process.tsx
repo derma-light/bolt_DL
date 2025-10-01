@@ -72,7 +72,7 @@ const Process = () => {
         {/* Care Instructions */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           <div className="bg-blue-50 rounded-xl p-8">
-            <h3 className="text-2xl font-semibold text-gray-900 mb-6">Vorbereitung</h3>
+            <h3 className="text-2xl font-semibold text-gray-900 mb-6">Vorbereitung der Laser-Haarentfernung</h3>
             <div className="space-y-4">
               <h4 className="font-medium text-gray-900">Vor der Behandlung:</h4>
               <ul className="space-y-3">
@@ -87,7 +87,7 @@ const Process = () => {
           </div>
 
           <div className="bg-green-50 rounded-xl p-8">
-            <h3 className="text-2xl font-semibold text-gray-900 mb-6">Nachsorge</h3>
+            <h3 className="text-2xl font-semibold text-gray-900 mb-6">Nachsorge nach Laser-Haarentfernung</h3>
             <div className="space-y-4">
               <h4 className="font-medium text-gray-900">Nach der Behandlung:</h4>
               <ul className="space-y-3">
@@ -105,7 +105,7 @@ const Process = () => {
         {/* CTA */}
         <div className="text-center mt-16">
           <a 
-            href="#beratung" 
+            href="/beratung" 
             className="inline-flex items-center px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
           >
             Kostenlose Erstberatung vereinbaren

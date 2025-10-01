@@ -1,37 +1,37 @@
 import React from 'react';
-import { Sparkles, Shield, Clock, Droplets, Target, User } from 'lucide-react';
+import { Sparkles, Clock, Shield, Target, Heart, CheckCircle } from 'lucide-react';
 
-const GesichtBenefits = () => {
+const FrauenBenefits = () => {
   const benefits = [
     {
       icon: Sparkles,
-      title: "Feineres Hautbild",
-      description: "Reduktion sichtbarer Härchen an Oberlippe, Kinn und Wangen – gleichmäßiger wirkender Teint."
-    },
-    {
-      icon: Shield,
-      title: "Schonend & präzise",
-      description: "Parameter abgestimmt auf sensible Areale; Kontaktkühlung für angenehme Sitzungen."
+      title: "Glatte, gepflegte Haut",
+      description: "Dauerhafte Haarreduktion für ein glattes, ebenmäßiges Hautbild an allen gewünschten Körperstellen."
     },
     {
       icon: Clock,
-      title: "Weniger Aufwand",
-      description: "Kein tägliches Zupfen oder Rasieren – langfristig spürbar weniger Nachwuchs."
+      title: "Zeitersparnis im Alltag",
+      description: "Weniger Rasieren, Epilieren oder Wachsen – mehr Zeit für die schönen Dinge des Lebens."
     },
     {
-      icon: Droplets,
-      title: "Hygienisch",
-      description: "Kontaktflächen werden hygienisch vorbereitet; kurze, planbare Sitzungen."
+      icon: Shield,
+      title: "Hautschonende Behandlung",
+      description: "Moderne Laser-Technologie mit Kontaktkühlung für maximalen Komfort und Hautschonung."
     },
     {
       icon: Target,
-      title: "Transparente Planung",
-      description: "Realistische Einschätzung zu Sitzungszahl, Intervallen und erreichbarer Reduktion."
+      title: "Präzise Ergebnisse",
+      description: "Individuelle Parameter für jeden Hauttyp und jede Körperregion – für optimale Behandlungsergebnisse."
     },
     {
-      icon: User,
-      title: "Individuell",
-      description: "Anpassung an Haardicke, Hautzustand und Areal – z. B. Oberlippe vs. Kinn."
+      icon: Heart,
+      title: "Mehr Selbstvertrauen",
+      description: "Fühlen Sie sich wohler in Ihrer Haut – ob im Bikini, beim Sport oder im Alltag."
+    },
+    {
+      icon: CheckCircle,
+      title: "Weniger Hautirritationen",
+      description: "Keine eingewachsenen Haare, kein Rasurbrand – für eine gesunde, irritationsfreie Haut."
     }
   ];
 
@@ -40,10 +40,10 @@ const GesichtBenefits = () => {
       <div className="container mx-auto px-4 lg:px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Deine Vorteile bei einer Laserbehandlung im Gesicht
+            Ihre Vorteile der Laser-Haarentfernung
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Professionelle Laser-Haarentfernung für ein ebenmäßigeres Hautbild im Gesicht.
+            Entdecken Sie die Vorteile professioneller Laser-Haarentfernung für alle weiblichen Körperbereiche.
           </p>
         </div>
 
@@ -88,4 +88,4 @@ const GesichtBenefits = () => {
   );
 };
 
-export default GesichtBenefits;
+export default FrauenBenefits;

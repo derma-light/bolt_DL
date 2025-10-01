@@ -1,49 +1,39 @@
 import React from 'react';
-import { Sparkles, Shield, Clock, Droplets, Target, User } from 'lucide-react';
+import { Droplets, Shield, Clock, Target, CheckCircle, Heart } from 'lucide-react';
 
-const GesichtBenefits = () => {
+const RueckenBenefits = () => {
   const benefits = [
     {
-      icon: Sparkles,
-      title: "Feineres Hautbild",
-      description: "Reduktion sichtbarer Härchen an Oberlippe, Kinn und Wangen – gleichmäßiger wirkender Teint."
+      icon: Target,
+      title: "Tragen Sie kurzärmelig wann immer sie möchten",
+      description: "Langfristige Ergebnisse: Im Vergleich zu herkömmlichen Methoden wie Rasieren oder Wachsen ist die Laserhaarentfernung eine dauerhafte Lösung. Die behandelten Haarfollikel werden verödet, sodass sie in den meisten Fällen nicht mehr nachwachsen."
     },
     {
       icon: Shield,
-      title: "Schonend & präzise",
-      description: "Parameter abgestimmt auf sensible Areale; Kontaktkühlung für angenehme Sitzungen."
+      title: "Weniger Hautirritationen durch das wiederholte Rasieren",
+      description: "Präzision: Der Laser wirkt gezielt auf die Haarfollikel, ohne die umliegende Haut zu schädigen. Dies macht die Methode besonders sicher und schonend."
     },
     {
       icon: Clock,
-      title: "Weniger Aufwand",
-      description: "Kein tägliches Zupfen oder Rasieren – langfristig spürbar weniger Nachwuchs."
+      title: "Die Wirkung von Selbstbräunern hält länger an",
+      description: "Zeitersparnis: Die Zeit, die für regelmäßiges Rasieren oder Waxing aufgewendet werden muss, entfällt. Nach einigen Behandlungen gehört der Haarwuchs auf dem Rücken der Vergangenheit an."
     },
     {
       icon: Droplets,
-      title: "Hygienisch",
-      description: "Kontaktflächen werden hygienisch vorbereitet; kurze, planbare Sitzungen."
-    },
-    {
-      icon: Target,
-      title: "Transparente Planung",
-      description: "Realistische Einschätzung zu Sitzungszahl, Intervallen und erreichbarer Reduktion."
-    },
-    {
-      icon: User,
-      title: "Individuell",
-      description: "Anpassung an Haardicke, Hautzustand und Areal – z. B. Oberlippe vs. Kinn."
+      title: "Schnelle, sichtbare Ergebnisse",
+      description: "Schmerzreduziert im Vergleich zu anderen Methoden: Im Gegensatz zum Wachsen oder Epilieren empfinden viele die Laserbehandlung als weniger schmerzhaft. Moderne Geräte verfügen über Kühlsysteme, die den Komfort während der Behandlung erhöhen."
     }
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 lg:px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Deine Vorteile bei einer Laserbehandlung im Gesicht
+            4 Vorteile der Laserbehandlung für den Rücken
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Professionelle Laser-Haarentfernung für ein ebenmäßigeres Hautbild im Gesicht.
+            Entdecken Sie die Vorteile professioneller Laser-Haarentfernung am Rücken für den modernen Mann.
           </p>
         </div>
 
@@ -51,7 +41,7 @@ const GesichtBenefits = () => {
           {benefits.map((benefit, index) => (
             <div 
               key={index} 
-              className="group p-8 bg-gray-50 rounded-xl hover:bg-blue-50 hover:shadow-lg transition-all duration-300 border border-gray-100"
+              className="group p-8 bg-white rounded-xl hover:bg-blue-50 hover:shadow-lg transition-all duration-300 border border-gray-100"
             >
               <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-200 transition-colors">
                 <benefit.icon className="w-8 h-8 text-blue-600" />
@@ -88,4 +78,4 @@ const GesichtBenefits = () => {
   );
 };
 
-export default GesichtBenefits;
+export default RueckenBenefits;

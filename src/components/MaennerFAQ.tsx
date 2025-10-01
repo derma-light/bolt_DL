@@ -29,7 +29,7 @@ const AccordionItem = ({ title, children, isOpen, onToggle }: {
   );
 };
 
-const GesichtFAQ = () => {
+const MaennerFAQ = () => {
   const [openAccordion, setOpenAccordion] = useState<string | null>(null);
 
   const toggleAccordion = (id: string) => {
@@ -38,14 +38,34 @@ const GesichtFAQ = () => {
 
   const faqItems = [
     {
-      id: 'shaving',
-      title: 'Kann ich zwischen den Sitzungen rasieren?',
-      content: 'Ja, Rasur ist erlaubt. Nicht zupfen oder wachsen, da die Haarwurzel für die Laserwirkung benötigt wird.'
+      id: 'sessions',
+      title: 'Wie viele Sitzungen brauche ich als Mann?',
+      content: 'Männliche Körperbehaarung ist oft dichter und stärker als bei Frauen. Daher sind meist 8-12 Sitzungen pro Areal nötig. Besonders am Rücken und der Brust kann die Behandlung mehr Zeit in Anspruch nehmen.'
     },
     {
-      id: 'acne',
-      title: 'Was, wenn ich unreine Haut habe?',
-      content: 'Aktiv entzündete Läsionen werden ausgespart. Bei stark aktiver Akne sollte zunächst eine dermatologische Behandlung erfolgen, bevor mit der Laser-Haarentfernung begonnen wird.'
+      id: 'pain',
+      title: 'Ist die Behandlung bei Männern schmerzhafter?',
+      content: 'Durch die oft dickeren und dichteren Haare kann das Wärmegefühl etwas intensiver sein. Die integrierte Kontaktkühlung sorgt jedoch für maximalen Komfort. Die meisten Männer empfinden die Behandlung als gut erträglich.'
+    },
+    {
+      id: 'back-treatment',
+      title: 'Wie läuft die Rückenbehandlung ab?',
+      content: 'Die Rückenbehandlung ist einer unserer häufigsten Behandlungen für Männer. Sie dauert etwa 30-45 Minuten und wird in bequemer Bauchlage durchgeführt. Durch die große Fläche sind meist mehr Sitzungen nötig.'
+    },
+    {
+      id: 'preparation',
+      title: 'Wie bereite ich mich als Mann vor?',
+      content: '24-48 Stunden vor der Behandlung sollten Sie die zu behandelnden Bereiche gründlich rasieren. Bei schwer erreichbaren Stellen wie dem Rücken können wir Ihnen dabei helfen. Vermeiden Sie Sonnenbäder 2 Wochen vorher.'
+    },
+    {
+      id: 'results',
+      title: 'Wann sehe ich als Mann erste Ergebnisse?',
+      content: 'Aufgrund der oft dichteren Behaarung können erste Ergebnisse etwas länger dauern. Nach 3-4 Sitzungen ist meist eine deutliche Reduktion sichtbar. Die behandelten Haare fallen nach 2-3 Wochen aus.'
+    },
+    {
+      id: 'cost',
+      title: 'Was kostet die Behandlung für Männer?',
+      content: 'Die Kosten variieren je nach Behandlungsareal. Große Bereiche wie der Rücken sind aufwendiger als kleinere Zonen. Gerne erstellen wir Ihnen ein individuelles Angebot in der kostenlosen Erstberatung.'
     }
   ];
 
@@ -58,7 +78,8 @@ const GesichtFAQ = () => {
               Häufig gestellte Fragen
             </h2>
             <p className="text-xl text-gray-600">
-              Alles was Sie über die Laser-Haarentfernung im Gesicht wissen müssen.
+              Alles was Sie über die Laser-Haarentfernung für Männer wissen müssen. 
+              Speziell angepasst für männliche Körperbehaarung mit höheren Energien und präziser Technologie.
             </p>
           </div>
 
@@ -90,4 +111,4 @@ const GesichtFAQ = () => {
   );
 };
 
-export default GesichtFAQ;
+export default MaennerFAQ;

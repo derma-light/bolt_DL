@@ -1,27 +1,27 @@
 import React from 'react';
 import { ArrowRight, Clock, Target, Shield, Star, Award, Zap } from 'lucide-react';
 
-const GesichtHero = () => {
+const FrauenHero = () => {
   const benefitElements = [
-    { icon: Clock, text: "10–25 Min. pro Sitzung" },
-    { icon: Target, text: "Reduziert dunklen Schatten & Flaum" },
-    { icon: Shield, text: "Präzise Parameter für sensible Areale" }
+    { icon: Clock, text: "Dauerhafte Reduktion statt ständiger Rasur" },
+    { icon: Target, text: "Kontaktgekühlt & hautschonend" },
+    { icon: Shield, text: "Transparente Planung & Intervalle" }
   ];
 
   const trustElements = [
-    { icon: Star, text: "⭐️⭐️⭐️⭐️⭐️ 4,9 (187)" },
-    { icon: Award, text: ">1.200 Behandlungen" },
-    { icon: Zap, text: "Dermatologisch geprüfte Technologie" }
+    { icon: Star, text: "Seit 2005 Erfahrung" },
+    { icon: Award, text: "Kontaktkühlung" },
+    { icon: Zap, text: "Individuelle Parameter" }
   ];
 
   return (
     <section className="relative bg-gray-50 min-h-[90vh] flex items-center overflow-hidden">
-      {/* Background Image */}
+      {/* Animated Alexandrit Laser Background Image */}
       <div className="absolute inset-0 z-0">
         <img
           src="/alexandrit-laser-light-blue.png"
-          alt=""
-          className="w-full h-full object-cover opacity-20"
+          alt="Alexandrit-Laser Technologie 755nm - Animiertes Bild zeigt Laserstrahl, Haarfollikel, Melanin-Absorption und Präzision"
+          className="w-full h-full object-cover opacity-20 alexandrit-laser-image"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-white/90 to-white/60"></div>
       </div>
@@ -30,20 +30,20 @@ const GesichtHero = () => {
         <div className="max-w-4xl">
           {/* Eyebrow */}
           <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-6">
-            Laser-Haarreduktion Gesicht · Hamburg
+            Laser-Haarentfernung · Frauen
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-            Ebenmäßiger Teint – weniger Gesichtshärchen
+            Glatte Haut – sicher, planbar, dauerhaft
           </h1>
           
           <h2 className="text-2xl md:text-3xl text-gray-800 font-semibold mb-6">
-            Präzise Laser-Haarreduktion für Oberlippe, Kinn & Wangen mit medizinischem Diodenlaser. Erste sichtbare Reduktionen häufig nach 3–5 Sitzungen.*
+            Alles Wichtige zur Laser-Haarentfernung für Frauen: Wie es funktioniert, wer geeignet ist und welche Zonen sich behandeln lassen
           </h2>
           
           <p className="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
-            Spezialisierte Gesichts-Haarentfernung in Hamburg mit präzisen Parametern für sensible Areale. 
-            Reduziert dunklen Schatten & Flaum für ebenmäßigen Teint.*
+            Professionelle Laser-Haarentfernung für Frauen in Hamburg: Von Gesicht bis Beine – 
+            individuelle Behandlung mit modernster 808-nm-Diodenlaser-Technologie für dauerhafte Haarreduktion.
           </p>
 
           {/* Benefits Pills */}
@@ -93,4 +93,4 @@ const GesichtHero = () => {
   );
 };
 
-export default GesichtHero;
+export default FrauenHero;

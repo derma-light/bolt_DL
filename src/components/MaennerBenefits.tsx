@@ -1,37 +1,37 @@
 import React from 'react';
-import { Sparkles, Shield, Clock, Droplets, Target, User } from 'lucide-react';
+import { Target, Clock, Shield, Zap, CheckCircle, TrendingUp } from 'lucide-react';
 
-const GesichtBenefits = () => {
+const MaennerBenefits = () => {
   const benefits = [
     {
-      icon: Sparkles,
-      title: "Feineres Hautbild",
-      description: "Reduktion sichtbarer Härchen an Oberlippe, Kinn und Wangen – gleichmäßiger wirkender Teint."
-    },
-    {
-      icon: Shield,
-      title: "Schonend & präzise",
-      description: "Parameter abgestimmt auf sensible Areale; Kontaktkühlung für angenehme Sitzungen."
+      icon: Target,
+      title: "Definierter Look",
+      description: "Präzise Haarentfernung für einen gepflegten, maskulinen Auftritt – ob im Business oder beim Sport."
     },
     {
       icon: Clock,
-      title: "Weniger Aufwand",
-      description: "Kein tägliches Zupfen oder Rasieren – langfristig spürbar weniger Nachwuchs."
+      title: "Weniger Pflegeaufwand",
+      description: "Keine tägliche Rasur mehr an Rücken oder Brust – mehr Zeit für wichtigere Dinge."
     },
     {
-      icon: Droplets,
-      title: "Hygienisch",
-      description: "Kontaktflächen werden hygienisch vorbereitet; kurze, planbare Sitzungen."
+      icon: Shield,
+      title: "Keine Rasurirritationen",
+      description: "Schluss mit Rasurbrand, eingewachsenen Haaren und Hautreizungen – besonders am Rücken."
     },
     {
-      icon: Target,
-      title: "Transparente Planung",
-      description: "Realistische Einschätzung zu Sitzungszahl, Intervallen und erreichbarer Reduktion."
+      icon: Zap,
+      title: "Sportlicher Vorteil",
+      description: "Weniger Reibung beim Sport, bessere Hygiene und ein athletischerer Look."
     },
     {
-      icon: User,
-      title: "Individuell",
-      description: "Anpassung an Haardicke, Hautzustand und Areal – z. B. Oberlippe vs. Kinn."
+      icon: CheckCircle,
+      title: "Professioneller Eindruck",
+      description: "Gepflegte Erscheinung im Beruf und Alltag – Selbstvertrauen durch makelloses Aussehen."
+    },
+    {
+      icon: TrendingUp,
+      title: "Langfristige Lösung",
+      description: "Dauerhafte Haarreduktion statt ständiger Rasur – eine Investition in Ihr Wohlbefinden."
     }
   ];
 
@@ -40,10 +40,11 @@ const GesichtBenefits = () => {
       <div className="container mx-auto px-4 lg:px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Deine Vorteile bei einer Laserbehandlung im Gesicht
+            Ihre Vorteile der Laser-Haarentfernung für Männer
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Professionelle Laser-Haarentfernung für ein ebenmäßigeres Hautbild im Gesicht.
+            Entdecken Sie die Vorteile professioneller Laser-Haarentfernung für den modernen Mann. 
+            Speziell entwickelt für männliche Körperbehaarung mit höheren Energien und präziser Technologie.
           </p>
         </div>
 
@@ -88,4 +89,4 @@ const GesichtBenefits = () => {
   );
 };
 
-export default GesichtBenefits;
+export default MaennerBenefits;

@@ -1,49 +1,49 @@
 import React from 'react';
-import { Sparkles, Shield, Clock, Droplets, Target, User } from 'lucide-react';
+import { Droplets, Shield, Clock, Target, CheckCircle, Heart } from 'lucide-react';
 
-const GesichtBenefits = () => {
+const IntimbereichMaennerBenefits = () => {
   const benefits = [
     {
-      icon: Sparkles,
-      title: "Feineres Hautbild",
-      description: "Reduktion sichtbarer Härchen an Oberlippe, Kinn und Wangen – gleichmäßiger wirkender Teint."
+      icon: Droplets,
+      title: "Verbesserte Hygiene",
+      description: "Weniger Haare bedeuten weniger Bakterienanhaftung und ein frischeres Gefühl – besonders beim Sport."
     },
     {
       icon: Shield,
-      title: "Schonend & präzise",
-      description: "Parameter abgestimmt auf sensible Areale; Kontaktkühlung für angenehme Sitzungen."
+      title: "Keine Rasurirritationen",
+      description: "Schluss mit Rasurbrand, eingewachsenen Haaren und schmerzhaften Hautreizungen im sensiblen Bereich."
     },
     {
       icon: Clock,
-      title: "Weniger Aufwand",
-      description: "Kein tägliches Zupfen oder Rasieren – langfristig spürbar weniger Nachwuchs."
-    },
-    {
-      icon: Droplets,
-      title: "Hygienisch",
-      description: "Kontaktflächen werden hygienisch vorbereitet; kurze, planbare Sitzungen."
+      title: "Zeitersparnis",
+      description: "Keine tägliche oder wöchentliche Rasur mehr – mehr Zeit für wichtigere Dinge im Leben."
     },
     {
       icon: Target,
-      title: "Transparente Planung",
-      description: "Realistische Einschätzung zu Sitzungszahl, Intervallen und erreichbarer Reduktion."
+      title: "Präzise Behandlung",
+      description: "Individuelle Anpassung der Behandlungszone nach Ihren Wünschen – von dezent bis komplett."
     },
     {
-      icon: User,
-      title: "Individuell",
-      description: "Anpassung an Haardicke, Hautzustand und Areal – z. B. Oberlippe vs. Kinn."
+      icon: CheckCircle,
+      title: "Langfristige Lösung",
+      description: "Dauerhafte Haarreduktion statt ständiger Rasur – eine Investition in Ihr Wohlbefinden."
+    },
+    {
+      icon: Heart,
+      title: "Mehr Selbstvertrauen",
+      description: "Ein gepflegtes Erscheinungsbild steigert das Selbstbewusstsein in intimen Situationen."
     }
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 lg:px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Deine Vorteile bei einer Laserbehandlung im Gesicht
+            Ihre Vorteile der Intimbereich-Behandlung
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Professionelle Laser-Haarentfernung für ein ebenmäßigeres Hautbild im Gesicht.
+            Entdecken Sie die Vorteile professioneller Laser-Haarentfernung im Intimbereich für Männer.
           </p>
         </div>
 
@@ -51,7 +51,7 @@ const GesichtBenefits = () => {
           {benefits.map((benefit, index) => (
             <div 
               key={index} 
-              className="group p-8 bg-gray-50 rounded-xl hover:bg-blue-50 hover:shadow-lg transition-all duration-300 border border-gray-100"
+              className="group p-8 bg-white rounded-xl hover:bg-blue-50 hover:shadow-lg transition-all duration-300 border border-gray-100"
             >
               <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-200 transition-colors">
                 <benefit.icon className="w-8 h-8 text-blue-600" />
@@ -88,4 +88,4 @@ const GesichtBenefits = () => {
   );
 };
 
-export default GesichtBenefits;
+export default IntimbereichMaennerBenefits;

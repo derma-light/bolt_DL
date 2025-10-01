@@ -1,11 +1,11 @@
 import React from 'react';
 import { ArrowRight, Clock, Target, Shield, Star, Award, Zap } from 'lucide-react';
 
-const GesichtHero = () => {
+const IntimbereichHero = () => {
   const benefitElements = [
-    { icon: Clock, text: "10–25 Min. pro Sitzung" },
-    { icon: Target, text: "Reduziert dunklen Schatten & Flaum" },
-    { icon: Shield, text: "Präzise Parameter für sensible Areale" }
+    { icon: Clock, text: "25–40 Min. pro Sitzung" },
+    { icon: Target, text: "Individuelle Analyse & Parameter" },
+    { icon: Shield, text: "Diskrete Einzelbehandlung" }
   ];
 
   const trustElements = [
@@ -30,20 +30,20 @@ const GesichtHero = () => {
         <div className="max-w-4xl">
           {/* Eyebrow */}
           <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-6">
-            Laser-Haarreduktion Gesicht · Hamburg
+            Laser-Haarreduktion Intimbereich · Hamburg
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-            Ebenmäßiger Teint – weniger Gesichtshärchen
+            Dauerhafte Haarreduktion im Intimbereich
           </h1>
           
           <h2 className="text-2xl md:text-3xl text-gray-800 font-semibold mb-6">
-            Präzise Laser-Haarreduktion für Oberlippe, Kinn & Wangen mit medizinischem Diodenlaser. Erste sichtbare Reduktionen häufig nach 3–5 Sitzungen.*
+            Professionelle Laserbehandlung (Alexandrit 755 nm) – individuell eingestellt, hygienisch, sicher & planbar
           </h2>
           
           <p className="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
-            Spezialisierte Gesichts-Haarentfernung in Hamburg mit präzisen Parametern für sensible Areale. 
-            Reduziert dunklen Schatten & Flaum für ebenmäßigen Teint.*
+            Spezialisierte Laser-Haarentfernung im Intimbereich für Frauen in Hamburg. 
+            Diskret, hygienisch und mit modernster Dual-Wellenlängen-Technologie (755 & 808 nm) für optimale Ergebnisse.*
           </p>
 
           {/* Benefits Pills */}
@@ -93,4 +93,4 @@ const GesichtHero = () => {
   );
 };
 
-export default GesichtHero;
+export default IntimbereichHero;

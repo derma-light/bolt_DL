@@ -31,16 +31,15 @@ const Header = () => {
                 </svg>
               </button>
               <div className="dropdown-menu-hybrid">
-                <a href="/frauen/">Übersicht Frauen</a>
+                <a href="/frauen">Übersicht Frauen</a>
                 <a href="/frauen/intimbereich">Intimbereich</a>
                 <a href="/bikinizone">Bikinizone</a>
                 <a href="/achseln">Achseln</a>
                 <a href="/arme">Arme</a>
-                <a href="/beine">Beine</a>
                 <a href="/bauch">Bauch</a>
+                <a href="/beine">Beine</a>
                 <a href="/brust">Brust</a>
                 <a href="/gesicht">Gesicht</a>
-                <a href="/frauen/pofalte.html">Po-Falte</a>
               </div>
             </div>
 
@@ -55,15 +54,17 @@ const Header = () => {
               <div className="dropdown-menu-hybrid">
                 <a href="/maenner">Übersicht Männer</a>
                 <a href="/maenner/intimbereich">Intimbereich</a>
+                <a href="/maenner/brust-bauch">Brust & Bauch</a>
                 <a href="/maenner/ruecken">Rücken</a>
               </div>
             </div>
 
-            <a href="#preise" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Preise</a>
-            <a href="#beratung" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Beratung</a>
+            <a href="/preise-haarentfernung" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Preise</a>
+            <a href="/beratung" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Beratung</a>
+            <a href="/termine" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">Termine</a>
             
-            <a href="#beratung" className="bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors">
-              Beratung
+            <a href="/termine" className="bg-blue-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors">
+              Termin buchen
             </a>
           </div>
 
@@ -85,7 +86,7 @@ const Header = () => {
               <div className="py-2">
                 <span className="text-gray-900 font-medium">Frauen</span>
                 <div className="mt-2 ml-4 space-y-1">
-                  <a href="/frauen/" className="block py-1 text-sm text-gray-600">Übersicht Frauen</a>
+                  <a href="/frauen" className="block py-1 text-sm text-gray-600">Übersicht Frauen</a>
                   <a href="/frauen/intimbereich" className="block py-1 text-sm text-gray-600">Intimbereich</a>
                   <a href="/bikinizone" className="block py-1 text-sm text-gray-600">Bikinizone</a>
                   <a href="/achseln" className="block py-1 text-sm text-gray-600">Achseln</a>
@@ -94,7 +95,6 @@ const Header = () => {
                   <a href="/beine" className="block py-1 text-sm text-gray-600">Beine</a>
                   <a href="/brust" className="block py-1 text-sm text-gray-600">Brust</a>
                   <a href="/gesicht" className="block py-1 text-sm text-gray-600">Gesicht</a>
-                  <a href="/frauen/pofalte.html" className="block py-1 text-sm text-gray-600">Po-Falte</a>
                 </div>
               </div>
               <div className="py-2">
@@ -106,9 +106,9 @@ const Header = () => {
                 </div>
               </div>
               <a href="#preise" className="block py-2 text-gray-700 font-medium">Preise</a>
-              <a href="#beratung" className="block py-2 text-gray-700 font-medium">Beratung</a>
-              <a href="#beratung" className="block w-full mt-4 bg-blue-600 text-white text-center py-3 rounded-lg font-medium">
-                Beratung
+              <a href="/beratung" className="block py-2 text-gray-700 font-medium">Beratung</a>
+              <a href="/termine" className="block w-full mt-4 bg-blue-600 text-white text-center py-3 rounded-lg font-medium">
+                Termin buchen
               </a>
             </div>
           </div>
