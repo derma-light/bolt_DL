@@ -2,11 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+/* Lokale Schrift-Einbindung: Montserrat 400/500/600 */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/montserrat-v31-latin-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/montserrat-v31-latin-500.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/montserrat-v31-latin-600.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
 
 @layer base {
   body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -32,6 +53,36 @@
   .btn--small {
     @apply px-4 py-2 text-sm;
   }
+  
+  /* Alexandrit Laser Animation Classes */
+  .alexandrit-laser-image {
+    @apply transition-all duration-1000 ease-in-out;
+    animation: hairlaserGlow 3s ease-in-out infinite;
+  }
+  
+  .laser-sweep {
+    animation: laserSweep 4s ease-in-out infinite;
+  }
+  
+  .energy-pulse {
+    animation: energyPulse 2s ease-in-out infinite;
+  }
+  
+  .laser-beam {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .laser-beam::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.6), transparent);
+    animation: laserSweep 3s ease-in-out infinite;
+  }
 }
 
 /* Smooth scrolling for anchor links */
@@ -47,6 +98,40 @@ button:focus {
 }
 
 /* Custom animations */
+@keyframes laserSweep {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes energyPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+@keyframes hairlaserGlow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.8), 0 0 30px rgba(59, 130, 246, 0.4);
+  }
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -83,18 +168,6 @@ button:focus {
   
   html {
     scroll-behavior: auto;
-  }
-
-  /* Active Navigation Link Styling */
-  .active-nav-link {
-    @apply text-blue-600 font-semibold;
-    border-bottom: 2px solid #2563eb;
-  }
-
-  /* Adjust for dropdown items */
-  .dropdown-menu-hybrid a.active-nav-link {
-    @apply bg-blue-50 text-blue-700;
-    border-bottom: none;
   }
 }
 /* Hybrid Dropdown Styles */
@@ -226,6 +299,66 @@ button:focus {
   }
 }
 
+/* Price Calculator Styles */
+.price-calculator {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.price-calculator .section-header {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 1.5rem 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.price-calculator .form-check {
+  margin-left: 15px;
+  margin-bottom: 0.75rem;
+}
+
+.price-calculator .summary {
+  background-color: #f8f9fa;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.price-calculator .summary p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.price-calculator #priceList {
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.price-calculator #priceList p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.active-btn {
+  background-color: #7a9271 !important;
+  color: white !important;
+  font-size: 20px;
+  padding: 10px 20px;
+}
+
+.inactive-btn {
+  background-color: white !important;
+  color: grey !important;
+  font-size: 20px;
+  padding: 10px 20px;
+}
+
 /* Touch-Device Optimierung */
 @media (hover: none) and (pointer: coarse) {
   .dropdown-container-hybrid:hover .dropdown-menu-hybrid {
@@ -248,5 +381,130 @@ button:focus {
   
   .dropdown-icon {
     transition: none;
+  }
+}
+
+/* ---------- Kachel Styles (Variante 2) ---------- */
+.tile {
+  background: #FFFFFF;
+  border: 1px solid #E6ECEF;
+  border-radius: 16px;
+  padding: 24px 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  isolation: isolate;
+  transition: background 0.25s cubic-bezier(.4,.2,.3,1), 
+              box-shadow 0.25s cubic-bezier(.4,.2,.3,1), 
+              border-color 0.25s cubic-bezier(.4,.2,.3,1);
+}
+
+.tile:focus-within,
+.tile:hover {
+  box-shadow: 0 4px 18px -6px rgba(0,0,0,0.10);
+  border-color: #D2E3E8;
+  background: #FFFFFF;
+}
+
+.tile header {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.tile h3 {
+  font-size: 1.1rem;
+  line-height: 1.2;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: .3px;
+  color: #1E2224;
+}
+
+.tile p {
+  margin: 0;
+  font-size: .95rem;
+  color: #5A646A;
+  line-height: 1.5;
+}
+
+.tile a.more {
+  margin-top: 4px;
+  font-size: .85rem;
+  text-decoration: none;
+  color: #1AA5C4;
+  font-weight: 500;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.tile a.more:hover {
+  text-decoration: underline;
+}
+
+.tile a.more:focus {
+  outline: 2px solid #FFB347;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.icon-wrap {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #1AA5C4 0%, #39D7E8 85%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.icon-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.35), transparent 70%);
+  mix-blend-mode: screen;
+  border-radius: 8px;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: white;
+  z-index: 1;
+}
+
+.divider {
+  width: 2rem;
+  height: 2px;
+  background: linear-gradient(90deg, #1AA5C4, #39D7E8);
+  margin-top: 8px;
+  border-radius: 1px;
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .tile {
+    background: #1F2937;
+    border-color: #374151;
+    color: #F9FAFB;
+  }
+  
+  .tile:hover {
+    background: #111827;
+    border-color: #4B5563;
+  }
+  
+  .tile h3 {
+    color: #F9FAFB;
+  }
+  
+  .tile p {
+    color: #D1D5DB;
   }
 }
