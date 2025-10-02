@@ -1,0 +1,52 @@
+╔══════════════════════════════════════════════════════════════╗
+║             DEPLOYMENT CHECKLIST - BITTE PRÜFEN              ║
+╚══════════════════════════════════════════════════════════════╝
+
+[ ] 1. Build Command ist gesetzt: npm run build
+
+[ ] 2. Publish Directory ist gesetzt: dist
+
+[ ] 3. Node Version ist 18 oder höher
+
+[ ] 4. Build läuft erfolgreich durch
+
+[ ] 5. dist/index.html existiert nach dem Build
+
+[ ] 6. dist/assets/ Ordner existiert mit JS und CSS
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+HÄUFIGE FEHLER:
+
+❌ Publish Directory = "." (Root)
+   → Führt zu weißer Seite
+   ✅ Muss sein: "dist"
+
+❌ Kein Build Command gesetzt
+   → Source Code wird deployed statt Build
+   ✅ Muss sein: "npm run build"
+
+❌ Falsche Node Version
+   → Build schlägt fehl
+   ✅ Muss sein: 18 oder höher
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+KONFIGURATIONSDATEIEN VORHANDEN:
+
+✅ netlify.toml     → Netlify Konfiguration
+✅ vercel.json      → Vercel Konfiguration  
+✅ .bolt/config.json → Bolt Konfiguration
+✅ dist/_redirects  → SPA Routing
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LOKALER TEST:
+
+$ npm run build
+$ npm run preview
+
+Öffnen Sie: http://localhost:4173
+→ Sollte die komplette Website zeigen
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
