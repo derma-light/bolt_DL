@@ -1,9 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Header from './Header';
+import Footer from './Footer';
+import DropdownScript from './DropdownScript';
 
 export default function HomeLongform() {
   return (
-    <main role="main" className="bg-white">
+    <>
+      <Header />
+      <DropdownScript />
+      <main role="main" className="bg-white">
       <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:px-8">
         <header>
           <h1 className="mb-4 text-2xl font-semibold text-gray-900">
@@ -186,6 +192,8 @@ export default function HomeLongform() {
         </footer>
       </article>
     </main>
+    <Footer />
+    </>
   );
 }
 
