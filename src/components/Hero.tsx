@@ -16,11 +16,7 @@ const Hero = () => {
     <section className="relative bg-gray-50 min-h-[90vh] flex items-center overflow-hidden">
       {/* Animated Alexandrit Laser Background Image */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="/alexandrit-laser-light-blue.png"
-          alt="Alexandrit-Laser Technologie 755nm - Animiertes Bild zeigt Laserstrahl, Haarfollikel, Melanin-Absorption und Präzision"
-          className="w-full h-full object-cover opacity-30 alexandrit-laser-image"
-        />
+        <div className="w-full h-full bg-gradient-to-br from-blue-50 via-blue-100 to-blue-50 opacity-60"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-white/95 to-white/70"></div>
         
         {/* Animated Overlay Elements */}
