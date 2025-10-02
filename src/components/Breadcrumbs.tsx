@@ -77,25 +77,22 @@ const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ currentPageName, customPath }
                 {index > 0 && <ChevronRight className="w-4 h-4 text-gray-400 mr-2" />}
                 {index === 0 && <Home className="w-4 h-4 mr-1" />}
                 {index === breadcrumbs.length - 1 ? (
-                  <span 
-                    className="text-gray-900 font-medium" 
+                  <span
+                    className="text-gray-900 font-medium"
                     aria-current="page"
-                    itemProp="name"
                     itemProp="name"
                   >
                     {crumb.name}
                   </span>
                 ) : (
-                  <Link 
-                    to={crumb.href} 
+                  <Link
+                    to={crumb.href}
                     className="text-gray-500 hover:text-blue-600 transition-colors"
-                    itemProp="item"
                     itemProp="item"
                   >
                     <span itemProp="name">{crumb.name}</span>
                   </Link>
                 )}
-                <meta itemProp="position" content={String(index + 1)} />
                 <meta itemProp="position" content={String(index + 1)} />
               </div>
             </li>

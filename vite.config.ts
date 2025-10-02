@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
+  base: '/',
   server: {
     host: true,
     port: 5173,
@@ -16,7 +17,10 @@ export default defineConfig({
     exclude: ['lucide-react'],
   },
   build: {
-    sourcemap: false,
+    sourcemap: true,
+    outDir: 'dist',
+    assetsDir: 'assets',
+    emptyOutDir: true,
     rollupOptions: {
       output: {
         manualChunks: {

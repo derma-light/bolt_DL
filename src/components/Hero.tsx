@@ -79,37 +79,33 @@ const Hero = () => {
 
           {/* Quick Access Links */}
           <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
-            <Link 
-              to="/frauen" 
+            <Link
+              to="/frauen"
               className="group p-4 bg-white/90 backdrop-blur-sm rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-md transition-all text-center"
-              title="Laser-Haarentfernung für Frauen"
               title="Laser-Haarentfernung für Frauen"
             >
               <div className="text-sm font-medium text-gray-700 group-hover:text-blue-600">Für Frauen</div>
               <div className="text-xs text-gray-500">Alle Bereiche</div>
             </Link>
-            <Link 
-              to="/maenner" 
+            <Link
+              to="/maenner"
               className="group p-4 bg-white/90 backdrop-blur-sm rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-md transition-all text-center"
-              title="Laser-Haarentfernung für Männer"
               title="Laser-Haarentfernung für Männer"
             >
               <div className="text-sm font-medium text-gray-700 group-hover:text-blue-600">Für Männer</div>
               <div className="text-xs text-gray-500">Alle Bereiche</div>
             </Link>
-            <Link 
-              to="/achseln" 
+            <Link
+              to="/achseln"
               className="group p-4 bg-white/90 backdrop-blur-sm rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-md transition-all text-center"
-              title="Laser-Haarentfernung Achseln"
               title="Laser-Haarentfernung Achseln"
             >
               <div className="text-sm font-medium text-gray-700 group-hover:text-blue-600">Achseln</div>
               <div className="text-xs text-gray-500">5-10 Min.</div>
             </Link>
-            <Link 
-              to="/bikinizone" 
+            <Link
+              to="/bikinizone"
               className="group p-4 bg-white/90 backdrop-blur-sm rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-md transition-all text-center"
-              title="Laser-Haarentfernung Bikinizone"
               title="Laser-Haarentfernung Bikinizone"
             >
               <div className="text-sm font-medium text-gray-700 group-hover:text-blue-600">Bikinizone</div>

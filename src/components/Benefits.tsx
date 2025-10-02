@@ -73,10 +73,9 @@ const Benefits = () => {
             Laser-Haarentfernung Behandlungsbereiche in Hamburg
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-            <Link 
-              to="/frauen" 
+            <Link
+              to="/frauen"
               className="group p-6 bg-pink-50 rounded-xl border border-pink-200 hover:border-pink-300 hover:shadow-lg transition-all duration-300"
-              title="Laser-Haarentfernung für Frauen - Alle Behandlungsbereiche"
               title="Laser-Haarentfernung für Frauen - Alle Behandlungsbereiche"
             >
               <h4 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-pink-600">
@@ -89,10 +88,9 @@ const Benefits = () => {
                 Alle Bereiche entdecken →
               </span>
             </Link>
-            <Link 
-              to="/maenner" 
+            <Link
+              to="/maenner"
               className="group p-6 bg-blue-50 rounded-xl border border-blue-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300"
-              title="Laser-Haarentfernung für Männer - Alle Behandlungsbereiche"
               title="Laser-Haarentfernung für Männer - Alle Behandlungsbereiche"
             >
               <h4 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-blue-600">
