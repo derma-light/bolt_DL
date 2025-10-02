@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import HomeLongform from './components/HomeLongform';
+import Home from './pages/Home';
 import Achseln from './pages/Achseln';
 import Arme from './pages/Arme';
 import Bauch from './pages/Bauch';
@@ -23,7 +23,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<HomeLongform />} />
+        <Route path="/" element={<Home />} />
         <Route path="/achseln" element={<Achseln />} />
         <Route path="/arme" element={<Arme />} />
         <Route path="/bauch" element={<Bauch />} />
