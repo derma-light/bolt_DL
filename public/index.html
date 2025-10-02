@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laser Haarentfernung Hamburg - Derma Light | Dauerhafte Haarentfernung seit 2005</title>
+    <meta name="description" content="Professionelle Laser-Haarentfernung in Hamburg seit 2005. Alexandrit & Diodenlaser 755/808nm. NiSV-zertifiziert. Individuelle Beratung. Ab 29€ pro Behandlung.">
+    <link rel="canonical" href="https://www.derma-light.de/">
+    <link rel="icon" type="image/png" href="/favicon-DL.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4b5563;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: #2563eb;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.7) 100%);
+            z-index: 1;
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 10;
+            max-width: 900px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero h2 {
+            font-size: clamp(1.25rem, 3vw, 2rem);
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-text {
+            font-size: clamp(1.125rem, 2vw, 1.5rem);
+            color: #374151;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 2rem;
+            font-weight: 600;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            transition: all 0.2s;
+            border: 2px solid transparent;
+        }
+
+        .btn-primary {
+            background: #2563eb;
+            color: #fff;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(37, 99, 235, 0.4);
+        }
+
+        .btn-secondary {
+            background: #fff;
+            color: #2563eb;
+            border-color: #2563eb;
+        }
+
+        .btn-secondary:hover {
+            background: #eff6ff;
+        }
+
+        /* Trust Elements */
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .trust-item {
+            background: rgba(239, 246, 255, 0.8);
+            padding: 1rem;
+            border-radius: 0.75rem;
+            border: 1px solid #bfdbfe;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .trust-item:hover {
+            background: rgba(219, 234, 254, 0.9);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+
+        .trust-icon {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .trust-text {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #1e40af;
+        }
+
+        /* Quick Links */
+        .quick-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 3rem;
+        }
+
+        .quick-link {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .quick-link:hover {
+            border-color: #93c5fd;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .quick-link-title {
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 0.25rem;
+        }
+
+        .quick-link:hover .quick-link-title {
+            color: #2563eb;
+        }
+
+        .quick-link-subtitle {
+            font-size: 0.75rem;
+            color: #6b7280;
+        }
+
+        /* Benefits Section */
+        .benefits {
+            padding: 5rem 0;
+            background: #fff;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #111827;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .benefit-card {
+            padding: 2rem;
+            background: #f9fafb;
+            border-radius: 1rem;
+            border: 1px solid #e5e7eb;
+            transition: all 0.3s;
+        }
+
+        .benefit-card:hover {
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+            transform: translateY(-4px);
+        }
+
+        .benefit-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .benefit-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #1f2937;
+        }
+
+        .benefit-text {
+            color: #6b7280;
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        footer {
+            background: #1f2937;
+            color: #fff;
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: #9ca3af;
+            text-decoration: none;
+            line-height: 2;
+            transition: color 0.2s;
+        }
+
+        .footer-section a:hover {
+            color: #60a5fa;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #374151;
+            padding-top: 1rem;
+            text-align: center;
+            color: #9ca3af;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .trust-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="/" class="logo">Derma Light</a>
+            <nav>
+                <ul>
+                    <li><a href="/frauen.html">Frauen</a></li>
+                    <li><a href="/maenner.html">Männer</a></li>
+                    <li><a href="/preise-haarentfernung.html">Preise</a></li>
+                    <li><a href="/beratung.html">Beratung</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Dauerhafte Haarentfernung Hamburg – Erfahrung seit 2005</h1>
+
+            <h2>Willkommen bei Derma Light – Ihrem Spezialisten für professionelle Laserhaarentfernung in Hamburg</h2>
+
+            <p class="hero-text">
+                Seit 2005 begleiten wir unsere Kundinnen und Kunden auf dem Weg zu glatter, haarfreier Haut – mit modernster 808-nm-Diodenlaser-Technologie, langjähriger Erfahrung und individueller Beratung in Hamburg Innenstadt.
+            </p>
+
+            <div class="button-group">
+                <a href="/beratung.html" class="btn btn-primary">
+                    Jetzt kostenloses Beratungsgespräch vereinbaren →
+                </a>
+                <a href="/preise-haarentfernung.html" class="btn btn-secondary">
+                    Preise & Termin buchen
+                </a>
+            </div>
+
+            <!-- Trust Elements -->
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <div class="trust-icon">🏆</div>
+                    <div class="trust-text">Seit 2005 in Hamburg</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">⚡</div>
+                    <div class="trust-text">808-nm-Diodenlaser</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">🛡️</div>
+                    <div class="trust-text">NiSV-zertifiziert</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">🎯</div>
+                    <div class="trust-text">Individuelle Beratung</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">💰</div>
+                    <div class="trust-text">Ab 29 € pro Behandlung</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">⭐</div>
+                    <div class="trust-text">4,9/5 Sterne</div>
+                </div>
+            </div>
+
+            <p style="font-size: 0.875rem; color: #6b7280; font-style: italic;">
+                Hinweis: Laserbehandlungen führen zu einer dauerhaften Reduktion des Haarwuchses –
+                vereinzelte feine Haare können später erneut wachsen.
+            </p>
+
+            <!-- Quick Access Links -->
+            <div class="quick-links">
+                <a href="/frauen.html" class="quick-link">
+                    <div class="quick-link-title">Für Frauen</div>
+                    <div class="quick-link-subtitle">Alle Bereiche</div>
+                </a>
+                <a href="/maenner.html" class="quick-link">
+                    <div class="quick-link-title">Für Männer</div>
+                    <div class="quick-link-subtitle">Alle Bereiche</div>
+                </a>
+                <a href="/achseln.html" class="quick-link">
+                    <div class="quick-link-title">Achseln</div>
+                    <div class="quick-link-subtitle">5-10 Min.</div>
+                </a>
+                <a href="/bikinizone.html" class="quick-link">
+                    <div class="quick-link-title">Bikinizone</div>
+                    <div class="quick-link-subtitle">15-30 Min.</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title">Warum Derma Light?</h2>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎓</div>
+                    <h3 class="benefit-title">20 Jahre Erfahrung</h3>
+                    <p class="benefit-text">
+                        Seit 2005 führen wir professionelle Laserbehandlungen durch. Tausende zufriedene Kunden vertrauen auf unsere Expertise.
+                    </p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔬</div>
+                    <h3 class="benefit-title">Modernste Technologie</h3>
+                    <p class="benefit-text">
+                        808-nm-Diodenlaser für alle Haar- und Hauttypen. Alexandrit-Laser 755nm für helle Haut und dunkles Haar.
+                    </p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">✅</div>
+                    <h3 class="benefit-title">NiSV-Zertifiziert</h3>
+                    <p class="benefit-text">
+                        Wir erfüllen alle gesetzlichen Anforderungen nach NiSV (Nichtionisierende Strahlenverordnung).
+                    </p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">💆</div>
+                    <h3 class="benefit-title">Schmerzarm</h3>
+                    <p class="benefit-text">
+                        Dank integrierter Kühlung ist die Behandlung deutlich angenehmer als herkömmliche Methoden.
+                    </p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">📍</div>
+                    <h3 class="benefit-title">Zentrale Lage</h3>
+                    <p class="benefit-text">
+                        Mitten in Hamburg – bequem erreichbar mit öffentlichen Verkehrsmitteln oder dem Auto.
+                    </p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🤝</div>
+                    <h3 class="benefit-title">Persönliche Beratung</h3>
+                    <p class="benefit-text">
+                        Individuelle Analyse Ihres Haut- und Haartyps. Wir erstellen einen maßgeschneiderten Behandlungsplan.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Behandlungen</h3>
+                    <ul>
+                        <li><a href="/frauen.html">Für Frauen</a></li>
+                        <li><a href="/maenner.html">Für Männer</a></li>
+                        <li><a href="/achseln.html">Achseln</a></li>
+                        <li><a href="/bikinizone.html">Bikinizone</a></li>
+                        <li><a href="/beine.html">Beine</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Informationen</h3>
+                    <ul>
+                        <li><a href="/preise-haarentfernung.html">Preise</a></li>
+                        <li><a href="/beratung.html">Beratung</a></li>
+                        <li><a href="/termine.html">Termin buchen</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Rechtliches</h3>
+                    <ul>
+                        <li><a href="/impressum.html">Impressum</a></li>
+                        <li><a href="/datenschutz.html">Datenschutz</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Kontakt</h3>
+                    <p>Derma Light Hamburg<br>
+                    Musterstraße 123<br>
+                    20095 Hamburg<br>
+                    Tel: 040 / 123456</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Derma Light Hamburg. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
