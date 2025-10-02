@@ -17,6 +17,7 @@ export default defineConfig({
     exclude: ['lucide-react'],
   },
   build: {
+    target: 'es2020',
     sourcemap: true,
     outDir: 'dist',
     assetsDir: 'assets',
